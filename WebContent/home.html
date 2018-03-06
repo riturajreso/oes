@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="slide.js">
+</script>
+</head>
+<body bgcolor="#FFEAFF">
+<div align="center" id="bold1" class="d1">
+<br/>
+<label><font face="frankruehl" color="#3AB883" size="+4">ONLINE EXAMINATION SYSTEM</font></label>
+</div>
+<div align="left" id="RESULT">
+     		<a href="home.html"><font face="frankruehl" color="blue">Home</font></a>							
+     		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    		<a href="contactus.jsp"><font face="frankruehl" color="blue">Contact Us</font></a>			
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       		<a href="login.jsp"><font face="frankruehl" color="blue">Give Exam</font></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       		<a href="showresult.jsp"><font face="frankruehl" color="blue">Result</font></a>
+       		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       		<a href="adminlogin.jsp"><font face="frankruehl" color="blue">Admin Login</font></a>
+</div>
+<div align="left" id="RESULT">
+		<img src="Picture/home5.jpg" alt="Slideshow Image Script" title="Slideshow Image Script" name="slide" border=0 width=900 height=200>
+		<script type="text/javascript">
+		slideshowimages("Picture/home.jpg","Picture/home1.jpg","Picture/home4.jpg","Picture/home5.jpg","Picture/home6.jpg","Picture/home7.jpg","Picture/home8.jpg","Picture/home9.jpg","Picture/home10.jpg","Picture/home11.jpg","Picture/home12.jpg","Picture/home13.jpg")
+		var slideshowspeed=2000;
+		var whichimage=0;
+		function slideit()
+		{
+			if (!document.images)
+				return
+				document.images.slide.src=slideimages[whichimage].src;
+			if (whichimage<slideimages.length-1)
+				whichimage++;
+			else
+				whichimage=0;
+				setTimeout("slideit()",slideshowspeed)
+		}
+		slideit();
+		</script>
+<!-- Script by hscripts.com -->
+</div>
+<div id="RESULT">
+     		<font face="frankruehl" color="blue">	
+     		<marquee behavior="alternate">Welcome to the Online Examination Site</marquee>				
+     		</font>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div align="center" id="footer">
+<table cellpadding="1" cellspacing="2">
+	<tr>
+		<td>
+        	<div align="center"><h4>Saroj Mohan Institute of Technology</h4></div>
+		</td>
+  	</tr>
+</table>
+</div>
+</body>
+</html>
